@@ -1,0 +1,179 @@
+body{
+    /*Resetando configurações feitas pelo css*/
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/background.jpg);
+    background-image: cover; /*Vai cobrir toda a altura e largura com a imagem*/
+    background-repeat: no-repeat; /*Não vai deixar a imagem se repetir*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Vai adicionar um blur no body*/
+body::before{
+    content: '';
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/*Definindo o tamanho da imagem da logo*/
+.logo img{
+    height: 45px;
+    width: 167px;
+}
+/*Definindo o tamanho do topo da página*/
+.header{
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10; /*Nem eu entendo direito essa propriedade*/
+}
+/*Definindo o espaço e centralizando*/
+.login_body{
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: rgb(0, 0, 0, 0.75); /*Deixando um blur no Login*/
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+/*Definindo o header*/
+.login_body h2{
+    font-size: 32px;
+    color: white;
+    margin-top: 0;
+}
+/*Configurando os inputs dentro da box*/
+.input_box input {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+/*Trocando a cor quando passar o mouse por cima*/
+.input_box input:hover {
+    background-color: #444;
+}
+/*Definindo o espaçamento entre um input e outro*/
+.input_box {
+    margin-bottom: 25px;
+}
+/*Configurando o botão de login*/
+.login_body button {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 14px;
+}
+/*Trocando a cor quando passar o mouse por cima do botão*/
+.login_body button:hover {
+    background-color: #fc1722;
+    cursor: pointer;
+}
+/*Configurando a parte de suporte*/
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+/*Definindo o tamanho do input dentro do suporte*/
+.support input {
+    width: 15px;
+    height: 15px;
+}
+/*Alinhando o espaçamento*/
+.remember {
+    display: flex;
+    align-items: center;
+}
+/*Definindo a altura e espaçameto entre os itens*/
+.remember span {
+    margin-right: 5px;
+    height: 25px;
+}
+/*Tirando a decoração do link de ajuda*/
+.help a{
+    text-decoration: none;
+    color: #737373;
+}
+/*Colocando decoração quando passa o mouse*/
+.help a:hover{
+    text-decoration: underline;
+}
+/*Alinhando e definindo a largura*/
+.login_facebook{
+    display: flex;
+    align-items: center;
+    color: #737373;
+    width: 100%;
+}
+/*Definindo o espaço entre a frase e a logo*/
+.login_facebook span{
+    margin-right: 5px;
+    font-size: 13px;
+}
+/*Tirando a decoração do link*/
+.login_facebook span a{
+    text-decoration: none;
+    color: #737373;
+}
+/*Mudando a cor e a fonte*/
+.sign_up{
+    color: #737373;
+    font-size: 16px;
+}
+/*Tirando a decoração do link e mudando a cor*/
+.sign_up a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*Adicionando sublinhado quando passar o mouse por cima*/
+.sign_up a:hover {
+    text-decoration: underline;
+}
+/*Definindo o tamanho da logo do facebook*/
+.style_facebook_logo{
+    height: 18px;
+}
+/*Definindo o espaçamento e altura do checkbox*/
+.style_checkbox{
+    margin: 0;
+    padding: 0;
+    height: 13px;
+}
+/*Mudando a cor e a fonte*/
+.terms {
+    color: #737373;
+    font-size: 13px;
+}
+/*Tirando a decoração e mudando a cor*/
+.terms a {
+    text-decoration: none;
+    color: #0071eb;
+}
+/*Adicionando sublinhando quando passar o mouse por cima*/
+.terms a:hover {
+    text-decoration: underline;
+}
